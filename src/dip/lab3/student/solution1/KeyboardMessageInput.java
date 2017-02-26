@@ -10,7 +10,7 @@ public class KeyboardMessageInput implements MessageInput, ReportService {
     private String report = "";
 
     @Override
-    public String readMessage(){
+    public final String readMessage(){
         addData("Enter text using the keyboard, then hit enter.");
         outputReport();
         clearReport();
@@ -20,17 +20,17 @@ public class KeyboardMessageInput implements MessageInput, ReportService {
     }
 
     @Override
-    public void addData(String data) {
+    public final void addData(String data) {
         report += data;
     }
 
     @Override
-    public void clearReport() {
+    public final void clearReport() {
         report = "";
     }
 
     @Override
-    public void outputReport() {
+    public final void outputReport() {
         System.out.println(report);
     }
     

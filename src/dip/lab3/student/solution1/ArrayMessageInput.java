@@ -15,14 +15,14 @@ public class ArrayMessageInput implements MessageInput {
         populateWisdom();
     }
 
-    private void populateWisdom() {
+    private final void populateWisdom() {
         someWisdomQuotes.add("Work hard. Dream big.");
         someWisdomQuotes.add("Whatever you are, be a good one.");
         someWisdomQuotes.add("Be the change you wish to see in the world.");
         someWisdomQuotes.add("Life is like riding a bicycle. To keep your balance you must keep moving.");
     }
 
-    public String selectRandomQuote() {
+    public final String selectRandomQuote() {
         Random randNum = new Random();
         int n = randNum.nextInt(someWisdomQuotes.size());
         String randomQuote = someWisdomQuotes.get(n);
@@ -32,7 +32,7 @@ public class ArrayMessageInput implements MessageInput {
     }
 
     @Override
-    public String readMessage() {
+    public final String readMessage() {
         String message = selectRandomQuote();
         return message;
     }

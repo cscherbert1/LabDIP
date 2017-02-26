@@ -13,24 +13,24 @@ public class MessageCopyService {
         setOutput(output);
     }
     
-    public void copyMessage(){
+    public final void copyMessage(){
         String message = input.readMessage();
         output.outputMessage(message);
     }
 
-    public MessageInput getInput() {
+    public final MessageInput getInput() {
         return input;
     }
 
-    public void setInput(MessageInput input) {
+    public final void setInput(MessageInput input) {
         this.input = input;
     }
 
-    public MessageOutput getOutput() {
+    public final MessageOutput getOutput() {
         return output;
     }
 
-    public void setOutput(MessageOutput output) {
+    public final void setOutput(MessageOutput output) {
         this.output = output;
     }
     
