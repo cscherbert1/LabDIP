@@ -4,7 +4,7 @@ package dip.lab3.student.solution1;
  *
  * @author cscherbert1
  */
-public class ConsoleMessageOutput {
+public class ConsoleMessageOutput implements MessageOutput {
     private String message;
     
     public String getMessage() {
@@ -15,8 +15,8 @@ public class ConsoleMessageOutput {
         this.message = message;
     }
     
-        public void outputMessage(){
-            
+    @Override
+    public void outputMessage(){            
         System.out.println(getMessage());
     }
 
