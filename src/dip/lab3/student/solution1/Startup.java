@@ -12,6 +12,7 @@ public class Startup {
         //inputs
         MessageInput input = new ArrayMessageInput();        
         //MessageInput input = new KeyboardMessageInput();
+
         
         //outputs
         //MessageOutput output = new ConsoleMessageOutput();
