@@ -4,16 +4,16 @@ package dip.lab3.student.solution1;
  *
  * @author cscherbert1
  */
-public class MessageCopyService {
+public class MessageProducingService {
     private MessageInput input;
     private MessageOutput output;
     
-    public MessageCopyService(MessageInput input, MessageOutput output){
+    public MessageProducingService(MessageInput input, MessageOutput output){
         setInput(input);
         setOutput(output);
     }
     
-    public final void copyMessage(){
+    public final void produceMessage(){
         String message = input.readMessage();
         output.outputMessage(message);
     }

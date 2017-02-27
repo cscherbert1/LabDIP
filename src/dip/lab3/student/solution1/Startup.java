@@ -13,16 +13,16 @@ public class Startup {
 
     public static void main(String[] args) {
         //inputs
-        MessageInput input = new ArrayMessageInput();        
-        //MessageInput input = new KeyboardMessageInput();
+        //MessageInput input = new RandomQuoteInput();        
+        MessageInput input = new ConsoleMessageInput();
 
         
         //outputs
         //MessageOutput output = new ConsoleMessageOutput();
         MessageOutput output = new GUIMessageOutput();
 
-        MessageCopyService copy = new MessageCopyService(input, output);
-        copy.copyMessage();
+        MessageProducingService copy = new MessageProducingService(input, output);
+        copy.produceMessage();
         
 
     }

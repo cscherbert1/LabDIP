@@ -7,11 +7,11 @@ import java.util.Random;
  *
  * @author cscherbert1
  */
-public class ArrayMessageInput implements MessageInput {
+public class RandomQuoteInput implements MessageInput {
 
     private ArrayList<String> someWisdomQuotes = new ArrayList<>();
 
-    public ArrayMessageInput() {
+    public RandomQuoteInput() {
         populateWisdom();
     }
 
